@@ -1,0 +1,64 @@
+package main
+
+import (
+	"encoding/csv"
+	"fmt"
+	"log"
+	"os"
+	"strings"
+
+	"github.com/PuerkitoBio/goquery"
+)
+
+func main() {
+	url := "http://www.fazenda.df.gov.br/aplicacoes/legislacao/legislacao/TelaSaidaDocumento.cfm?txtNumero=82&txtAno=2018&txtTipo=7&txtParte=."
+
+	doc, err := goquery.NewDocument(url)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// Encontra todas as linhas da tabela
+	rows := doc.Find("#conteudo table tr")
+
+	// Obtem os cabecalhos das colunas a partir da primeira linha
+	headers := make([]string, 0)
+	rows.First().Find("th").Each(func(i int, s *goquery.Selection) {
+		headers = append(headers, strings.TrimSpace(s.Text()))
+	})
+
+	// Cria arquivo CSV e escreve cabecalho
+	file, err := os.Create("dados.csv")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	writer := csv.NewWriter(file)
+	defer writer.Flush()
+
+	err = writer.Write(headers)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// Escreve dados das linhas no arquivo CSV
+	rows.Each(func(i int, s *goquery.Selection) {
+		// Ignora a primeira linha (cabeçalho)
+		if i == 0 {
+			return
+		}
+
+		data := make([]string, 0)
+		s.Find("td").Each(func(i int, s *goquery.Selection) {
+			data = append(data, strings.TrimSpace(s.Text()))
+		})
+
+		err = writer.Write(data)
+		if err != nil {
+			log.Fatal(err)
+		}
+	})
+
+	fmt.Println("Arquivo CSV criado com sucesso!")
+}

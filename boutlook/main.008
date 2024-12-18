@@ -1,0 +1,74 @@
+package main
+
+import (
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
+)
+
+// CustomField é um componente com posição fixa
+type CustomField struct {
+	Label      *widget.Label // Rótulo do campo
+	Entry      *widget.Entry // Campo de entrada
+	PosX, PosY float32       // Coordenadas (x, y) no layout
+	Width      float32       // Largura do campo
+}
+
+// NovoCustomField cria um novo CustomField
+func NovoCustomField(labelText string, posX, posY, width float32) *CustomField {
+	return &CustomField{
+		Label: widget.NewLabel(labelText),
+		Entry: widget.NewEntry(),
+		PosX:  posX,
+		PosY:  posY,
+		Width: width,
+	}
+}
+
+// CustomLayout controla a posição dos componentes
+type CustomLayout struct {
+	Fields []*CustomField // Componentes a serem posicionados
+}
+
+func (c *CustomLayout) Layout(objects []fyne.CanvasObject, size fyne.Size) {
+	for _, field := range c.Fields {
+		// Posicionar o rótulo
+		field.Label.Move(fyne.NewPos(field.PosX, field.PosY))
+		field.Label.Resize(fyne.NewSize(field.Width, 30))
+
+		// Posicionar o campo de entrada logo abaixo do rótulo
+		field.Entry.Move(fyne.NewPos(field.PosX, field.PosY+35))
+		field.Entry.Resize(fyne.NewSize(field.Width, 30))
+	}
+}
+
+func (c *CustomLayout) MinSize(objects []fyne.CanvasObject) fyne.Size {
+	return fyne.NewSize(400, 300) // Define um tamanho mínimo para o layout
+}
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Componentes Customizados")
+
+	// Criando campos com posições fixas
+	field1 := NovoCustomField("Nome:", 10, 10, 200)
+	field2 := NovoCustomField("Email:", 10, 90, 200)
+	field3 := NovoCustomField("Telefone:", 10, 170, 200)
+
+	// Registrando os campos no layout customizado
+	customLayout := &CustomLayout{
+		Fields: []*CustomField{field1, field2, field3},
+	}
+
+	// Adicionando os componentes ao container
+	content := container.New(customLayout,
+		field1.Label, field1.Entry,
+		field2.Label, field2.Entry,
+		field3.Label, field3.Entry,
+	)
+
+	myWindow.SetContent(content)
+	myWindow.Resize(fyne.NewSize(400, 300))
+	myWindow.ShowAndRun()
+}

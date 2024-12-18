@@ -1,0 +1,316 @@
+gersedip  [vision version ]
+
+# of records:              1097
+file size:                83968 (gersedip)
+file size:                13312 (gersedip.vix)
+total file size:          97280
+segment size:        2147482112
+record size:                 61
+# of keys:                    1
+user count:                   0
+
+Key  Dups    Seg-1     Seg-2     Seg-3     Seg-4     Seg-5     Seg-6
+            (sz/of)   (sz/of)   (sz/of)   (sz/of)   (sz/of)   (sz/of)
+
+  0    N    6/0     
+Resultado: 0
+Result: 61
+511U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+011U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+512U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+012U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+511REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+011REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+512REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+012REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+511RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+011RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+021RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+031RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+041RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+061RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+521RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+531RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+541RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+561RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+571RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+5111  SERIE 1                                                
+-------------------------------
+Result: 61
+0111  SERIE 1                                                
+-------------------------------
+Result: 61
+0211  SERIE 1                                                
+-------------------------------
+Result: 61
+0311  SERIE 1                                                
+-------------------------------
+Result: 61
+0411  SERIE "1"                                              
+-------------------------------
+Result: 61
+0611  SERIE 1                                                
+-------------------------------
+Result: 61
+5211  SERIE 1                                                
+-------------------------------
+Result: 61
+5311  SERIE 1                                                
+-------------------------------
+Result: 61
+5411  SERIE "1"                                              
+-------------------------------
+Result: 61
+5611  SERIE 1                                                
+-------------------------------
+Result: 61
+5711  SERIE "1"                                              
+-------------------------------
+Result: 61
+541U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+542U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+541REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+542REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+021REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+021U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+022REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+022U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+031REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+031U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+032REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+032U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+041REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+041U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+042REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+042U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+061REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+061U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+062REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+062U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+0711  SERIE "1"                                              
+-------------------------------
+Result: 61
+07112 SERIE 12                                               
+-------------------------------
+Result: 61
+0712  SERIE "2"                                              
+-------------------------------
+Result: 61
+07121 21                                                     
+-------------------------------
+Result: 61
+0713  SERIE "3"                                              
+-------------------------------
+Result: 61
+0714  SERIE 4                                                
+-------------------------------
+Result: 61
+0715  SERIE 5                                                
+-------------------------------
+Result: 61
+071RC REGISTRO DE COMPROMISSO                                
+-------------------------------
+Result: 61
+071REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+071U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+072REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+072U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+521REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+521U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+522REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+522U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+531REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+531U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+532REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+532U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+561REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+561U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+562REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+562U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+571REQREQUISICAO DE ENTRADAS                                 
+-------------------------------
+Result: 61
+571U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+572REQREQUISICAO DE SAIDAS                                   
+-------------------------------
+Result: 61
+572U  SERIE UNICA                                            
+-------------------------------
+Result: 61
+511   SEM SERIE                                              
+-------------------------------
+Result: 61
+011   SEM SERIE                                              
+-------------------------------
+Result: 61
+021   SEM SERIE                                              
+-------------------------------
+Result: 61
+031   SEM SERIE                                              
+-------------------------------
+Result: 61
+041   SEM SERIE                                              
+-------------------------------
+Result: 61
+061   SEM SERIE                                              
+-------------------------------
+Result: 61
+521   SEM SERIE                                              
+-------------------------------
+Result: 61
+531   SEM SERIE                                              
+-------------------------------
+Result: 61
+541   SEM SERIE                                              
+-------------------------------
+Result: 61
+561   SEM SERIE                                              
+-------------------------------
+Result: 61
+571   SEM SERIE                                              
+-------------------------------
+Result: 61
+901   SEM SERIE                                              
+-------------------------------
+Result: 61
+911   SEM SERIE                                              
+-------------------------------
+Result: 61
+512   SEM SERIE                                              
+-------------------------------
+Result: 61
+012   SEM SERIE                                              
+-------------------------------
+Result: 61
+022   SEM SERIE                                              
+-------------------------------
+Result: 61
+032   SEM SERIE                                              
+-------------------------------
+Result: 61
+042   SEM SERIE                                              
+-------------------------------
+Result: 61
+062   SEM SERIE                                              
+-------------------------------
+Result: 61
+522   SEM SERIE                                              
+-------------------------------
+Result: 61
+532   SEM SERIE                                              
+-------------------------------
+Result: 61
+542   SEM SERIE                                              
+-------------------------------

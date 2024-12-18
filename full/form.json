@@ -1,0 +1,48 @@
+{
+    "tables": [
+      {
+        "name": "usuarios",
+        "label": "Usuários",
+        "fields": [
+          {
+            "name": "id",
+            "type": "integer",
+            "label": "ID",
+            "primaryKey": true,
+            "autoIncrement": true
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "label": "Nome",
+            "validation": {
+              "required": true,
+              "minLength": 3
+            }
+          },
+          {
+            "name": "email",
+            "type": "email",
+            "label": "E-mail",
+            "validation": {
+              "required": true
+            }
+          },
+          {
+            "name": "cnpj",
+            "type": "cnpj",
+            "label": "Cnpj",
+            "validation": {
+              "required": true
+            }
+          },
+          {
+            "name": "data_nascimento",
+            "type": "date",
+            "label": "Data de Nascimento"
+          }
+        ]
+      }
+    ]
+  }
+  

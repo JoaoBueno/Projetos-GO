@@ -1,0 +1,60 @@
+package main
+
+import (
+	webview "github.com/webview/webview_go"
+)
+
+func main() {
+	// Crie uma instância do WebView
+	debug := true // Modo debug (exibe logs no console)
+	w := webview.New(debug)
+	defer w.Destroy()
+
+	// Configure o WebView
+	w.SetTitle("HTML Viewer")
+	w.SetSize(800, 600, webview.HintNone)
+
+	// HTML para exibir
+	emailHTML := `
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>E-mail Viewer</title>
+			<style>
+				body {
+					font-family: Arial, sans-serif;
+					margin: 20px;
+				}
+				h1 {
+					color: #333;
+				}
+				p {
+					font-size: 16px;
+					line-height: 1.5;
+				}
+				ul {
+					margin-left: 20px;
+				}
+				ul li {
+					margin-bottom: 10px;
+				}
+			</style>
+		</head>
+		<body>
+			<h1>Hi João,</h1>
+			<p>Welcome to our platform! Here’s a <b>quick update</b>:</p>
+			<ul>
+				<li>Feature A is live!</li>
+				<li>We’ve added something cool.</li>
+			</ul>
+			<p>Thanks for joining us!</p>
+		</body>
+		</html>
+	`
+
+	// Carregar o HTML no WebView
+	w.Navigate("data:text/html," + emailHTML)
+
+	// Mostrar o WebView
+	w.Run()
+}

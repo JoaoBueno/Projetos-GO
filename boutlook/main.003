@@ -1,0 +1,56 @@
+package main
+
+import (
+	"context"
+	"log"
+	"time"
+
+	"github.com/chromedp/chromedp"
+)
+
+func main() {
+	// Caminho para o executável do Chromium
+	chromiumPath := "/snap/bin/chromium" // Substitua pelo caminho real, se necessário.
+
+	// Configure o allocator para usar o Chromium
+	opts := chromedp.DefaultExecAllocatorOptions[:]
+	opts = append(opts, chromedp.ExecPath(chromiumPath))
+
+	allocCtx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
+	defer cancel()
+
+	// Crie um contexto
+	ctx, cancel := chromedp.NewContext(allocCtx)
+	defer cancel()
+
+	// HTML que você quer exibir
+	htmlContent := `
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>HTML Viewer</title>
+			<style>
+				body { font-family: Arial, sans-serif; margin: 20px; }
+				h1 { color: #333; }
+			</style>
+		</head>
+		<body>
+			<h1>Hi João</h1>
+			<p>Welcome to our platform!</p>
+		</body>
+	</html>
+	`
+
+	// Tarefas para renderizar o HTML
+	tasks := chromedp.Tasks{
+		chromedp.Navigate("data:text/html," + htmlContent),
+		chromedp.Sleep(15 * time.Second), // Aguarde 15 segundos para visualizar
+	}
+
+	// Execute as tarefas
+	if err := chromedp.Run(ctx, tasks); err != nil {
+		log.Fatal(err)
+	}
+
+	log.Println("Chromium finalizado.")
+}

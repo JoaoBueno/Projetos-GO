@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+	"log"
+)
+
+func main() {
+
+	file, err := ioutil.ReadFile("./1l.jso")
+	if err != nil {
+		log.Fatal(err)
+	}
+	res := string(file)
+	fmt.Println(res)
+}

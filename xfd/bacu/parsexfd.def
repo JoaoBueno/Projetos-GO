@@ -1,0 +1,237 @@
+* PARSEXFD.DEF - Some useful definitions for calling C$PARSEXFD.
+* Last modified: 22-Apr-2004 RLZ.
+
+* Copyright (c) 1996-2007 by Acucorp, Inc.  Users of ACUCOBOL
+* may freely include this file in their COBOL source code.
+
+* We use data from filesys.def
+ COPY "bacu/filesys.def".
+
+* Opcodes for C$PARSEXFD
+
+78  PARSEXFD-PARSE                      VALUE 0.
+78  PARSEXFD-GET-KEY-INFO               VALUE 1.
+78  PARSEXFD-GET-COND-INFO              VALUE 2.
+78  PARSEXFD-GET-FIELD-INFO             VALUE 3.
+78  PARSEXFD-TEST-CONDITIONS            VALUE 4.
+78  PARSEXFD-RELEASE                    VALUE 9.
+
+* Flags to pass to PARSE.  These can be added.
+
+78  PARSEXFD-FLAG-INCLUDE-COMMENTS      VALUE 1.
+78  PARSEXFD-FLAG-INCLUDE-999           VALUE 2.
+78  PARSEXFD-FLAG-EXCLUDE-ARRAYS        VALUE 4.
+78  PARSEXFD-FLAG-DEEP-FIRST            VALUE 8.
+
+* Other constants
+
+*  Data types (names and values match those in lib/sub.h)
+78  NumEdited                           VALUE 0.  | Numeric Edited
+78  NumUnsigned                         VALUE 1.  | Unsigned numeric
+78  NumSignSep                          VALUE 2.  | Signed numeric (trail sep)
+78  NumSigned                           VALUE 3.  | Signed numeric (trail comb)
+78  NumSepLead                          VALUE 4.  | Signed numeric (lead sep)
+78  NumLeading                          VALUE 5.  | Signed numeric (lead comb)
+78  CompSigned                          VALUE 6.  | Signed computational
+78  CompUnsigned                        VALUE 7.  | Unsigned computational
+78  PackedPositive                      VALUE 8.  | Positive packed-decimal
+78  PackedSigned                        VALUE 9.  | Signed packed-decimal
+78  PackedUnsigned                      VALUE 10. | Computational-6
+78  BinarySigned                        VALUE 11. | Signed binary
+78  BinaryUnsigned                      VALUE 12. | Unsigned binary
+78  NativeSigned                        VALUE 13. | Signed native-order binary
+78  NativeUnsigned                      VALUE 14. | Unsigned native-order binary
+78  Alphanum                            VALUE 16. | Alphanumeric
+78  JustAN                              VALUE 17. | Alphanumeric (justified)
+78  Alphbetic                           VALUE 18. | Alphabetic
+78  JustAlpha                           VALUE 19. | Alphabetic (justified)
+78  AlphaEdited                         VALUE 20. | Alphanumeric Edited
+78  Group                               VALUE 22. | Group
+78  Flt                                 VALUE 23. | Float or Double
+78  Nat-type                            VALUE 24. | National
+78  JustNat                             VALUE 25. | National (justified)
+78  NatEdited                           VALUE 26. | National edited
+78  Wide-type                           VALUE 27. | Wide
+78  JustWide                            VALUE 28. | Wide (justified)
+78  WideEdited                          VALUE 29. | Wide edited
+78  NativeVSigned                       VALUE 30. | Signed var-len native-order binary
+78  NativeVUnsigned                     VALUE 31. | Unsigned var-len native-order binary
+
+* Values used in PARSEXFD-FIELD-USER-TYPE
+78  UserDate                            VALUE 1.
+78  UserBinary                          VALUE 2.
+78  UserVarLength                       VALUE 3.
+78  SecondaryTable                      VALUE 16.
+
+78  MaxNumKeyFields                     VALUE 16.
+
+* Data items describing various parts of the XFD
+
+* The whole XFD
+
+01  PARSEXFD-DESCRIPTION.
+    03  PARSEXFD-HEADER-LINE.
+        05  PARSEXFD-VERSION            PIC X COMP-N.
+        05  PARSEXFD-SELECT-NAME        PIC X(30).
+        05  PARSEXFD-FILENAME           PIC X(30).
+        05  PARSEXFD-FILETYPE           PIC X COMP-N.
+            88  PARSEXFD-SEQUENTIAL-FILE    VALUE 4.
+            88  PARSEXFD-RELATIVE-FILE      VALUE 8.
+            88  PARSEXFD-INDEXED-FILE       VALUE 12.
+    03  PARSEXFD-RECORD-LINE.
+        05  PARSEXFD-MAX-REC-SIZE       PIC X(4) COMP-N.
+        05  PARSEXFD-MIN-REC-SIZE       PIC X(4) COMP-N.
+        05  PARSEXFD-NUM-KEYS           PIC X COMP-N.
+    03  PARSEXFD-CONDITION-LINE.
+        05  PARSEXFD-NUMBER-CONDITIONS  PIC XX COMP-N.
+    03  PARSEXFD-FIELDS-LINE.
+        05  PARSEXFD-NUMBER-FIELDS      PIC X(4) COMP-N.
+    03  PARSEXFD-V6-INFORMATION.
+        05  PARSEXFD-COBOL-TRIGGER      PIC X(100).
+        05  PARSEXFD-COMPILE-LINE.
+            07  PARSEXFD-SIGN-FLAG      PIC X(2) COMP-N.
+                88  PARSEXFD-SIGN-ACU   VALUE 0.
+                88  PARSEXFD-SIGN-IBM   VALUE 4.
+                88  PARSEXFD-SIGN-MF    VALUE 8.
+                88  PARSEXFD-SIGN-NCR   VALUE 20.
+                88  PARSEXFD-SIGN-VAX   VALUE 36.
+                88  PARSEXFD-SIGN-MBP   VALUE 72.
+                88  PARSEXFD-SIGN-REA   VALUE 128.
+            07  PARSEXFD-MAX-DIGITS     PIC X(2) COMP-N.
+                88  PARSEXFD-18-DIGITS  VALUE 40.
+                88  PARSEXFD-31-DIGITS  VALUE 68.
+            07  PARSEXFD-PGM-PERIOD     PIC X.
+            07  PARSEXFD-PGM-COMMA      PIC X.
+            07  PARSEXFD-ENCODING       PIC X(2) COMP-N.
+                88  PARSEXFD_ASCII      VALUE 0.
+                88  PARSEXFD_WIDE       VALUE 1.
+                88  PARSEXFD_UTF-8      VALUE 2.
+                88  PARSEXFD_UTF-16-LE  VALUE 3.
+                88  PARSEXFD_UTF-16-BE  VALUE 5.
+                88  PARSEXFD_UTF-32-LE  VALUE 4.
+                88  PARSEXFD_UTF-32-BE  VALUE 6.
+
+* Key description
+
+01  PARSEXFD-KEY-DESCRIPTION.
+    03  PARSEXFD-NUMBER-SEGMENTS        PIC X COMP-N.
+    03  PARSEXFD-DUP-FLAG               PIC X COMP-N.
+        88  PARSEXFD-ALLOW-DUPLICATES   VALUE 1 FALSE 0.
+    03  PARSEXFD-SEGMENT-DESCRIPTION
+            OCCURS MAX-SEGS TIMES
+            INDEXED BY PARSEXFD-SEG-IDX.
+        05  PARSEXFD-SEGMENT-LENGTH     PIC X COMP-N.
+        05  PARSEXFD-SEGMENT-OFFSET     PIC X(4) COMP-N.
+    03  PARSEXFD-NUMBER-KEY-FIELDS      PIC X COMP-N.
+    03  PARSEXFD-KEY-FIELDS
+            OCCURS MAXNUMKEYFIELDS TIMES
+            INDEXED BY PARSEXFD-KEY-FIELD-IDX.
+        05  PARSEXFD-KEY-FIELD-NUM      PIC XX COMP-N.
+
+* Condition description
+
+01  PARSEXFD-CONDITION-DESCRIPTION.
+    03  PARSEXFD-CONDITION-TYPE         PIC X COMP-N.
+        88  PARSEXFD-EQUAL-CONDITION    VALUE 1.
+        88  PARSEXFD-AND-CONDITION      VALUE 2.
+        88  PARSEXFD-OTHER-CONDITION    VALUE 3.
+        88  PARSEXFD-GT-CONDITION       VALUE 4.
+        88  PARSEXFD-GE-CONDITION       VALUE 5.
+        88  PARSEXFD-LT-CONDITION       VALUE 6.
+        88  PARSEXFD-LE-CONDITION       VALUE 7.
+        88  PARSEXFD-NE-CONDITION       VALUE 8.
+        88  PARSEXFD-OR-CONDITION       VALUE 9.
+        88  PARSEXFD-COMPARISON-COND    VALUES 1, 4 THROUGH 8.
+    03  PARSEXFD-CONDITION-FLAG         PIC X.
+        88  PARSEXFD-TRUE-CONDITION     VALUE 'Y' FALSE 'N'.
+    03  PARSEXFD-COMPARISON-CONDITIONS.
+        05  PARSEXFD-COMP-FIELDNUM      PIC XX COMP-N.
+        05  PARSEXFD-COMP-FIELDNAME     PIC X(30).
+        05  PARSEXFD-COMP-FIELD-VAL     PIC X(50).
+    03  PARSEXFD-OTHER-CONDITIONS
+                REDEFINES PARSEXFD-COMPARISON-CONDITIONS.
+        05  PARSEXFD-OTHER-FIELDNUM     PIC XX COMP-N.
+        05  PARSEXFD-OTHER-FIELDNAME    PIC X(30).
+    03  PARSEXFD-AND-OR-CONDITIONS
+                REDEFINES PARSEXFD-COMPARISON-CONDITIONS.
+        05  PARSEXFD-CONDITION-1        PIC XX COMP-N.
+        05  PARSEXFD-CONDITION-2        PIC XX COMP-N.
+    03  PARSEXFD-CONDITION-TABLENAME    PIC X(30).
+
+* Field description
+01  PARSEXFD-FIELD-DESCRIPTION.
+   03  PARSEXFD-FIELD-OFFSET            PIC X(4) COMP-N.
+   03  PARSEXFD-FIELD-LENGTH            PIC X(4) COMP-N.
+   03  PARSEXFD-FIELD-TYPE              PIC X COMP-N.
+       88  PARSEXFD-SIGNED-FIELD VALUES NumSignSep
+                                        NumSigned
+                                        NumSepLead
+                                        NumLeading
+                                        CompSigned
+                                        PackedSigned
+                                        BinarySigned
+                                        NativeSigned.
+       88  PARSEXFD-NUM-FIELD    VALUES NumEdited THRU
+                                        NativeUnsigned.
+       88  PARSEXFD-FLOAT-FIELD  VALUE  Flt.
+       88  PARSEXFD-ASCII-FIELD  VALUES Alphanum THRU Group.
+       88  PARSEXFD-NAT-FIELD    VALUES Nat-type THRU NatEdited.
+       88  PARSEXFD-WIDE-FIELD   VALUES Wide-type THRU
+                                        WideEdited.
+   03  PARSEXFD-FIELD-DIGITS            PIC X COMP-N.
+   03  PARSEXFD-FIELD-SCALE             SIGNED-SHORT.
+   03  PARSEXFD-FIELD-USER-TYPE         PIC XX COMP-N.
+   03  PARSEXFD-FIELD-CONDITION         PIC XX COMP-N.
+   03  PARSEXFD-FIELD-LEVEL             PIC X COMP-N.
+   03  PARSEXFD-FIELD-NAME              PIC X(30).
+   03  PARSEXFD-FIELD-FORMAT            PIC X(30).
+   03  PARSEXFD-FIELD-OCCURS-DEPTH      PIC X COMP-N.
+   03  PARSEXFD-FIELD-OCCURS-TABLE
+           OCCURS MaxNumKeyFields TIMES
+           INDEXED BY PARSEXFD-FIELD-OCCURS-LEVEL.
+       05  PARSEXFD-FIELD-OCC-MAX-IDX   PIC XX COMP-N.
+       05  PARSEXFD-FIELD-OCC-THIS-IDX  PIC XX COMP-N.
+   03  PARSEXFD-FIELD-IN-KEY-FLAG       PIC X.
+       88  PARSEXFD-FIELD-IS-IN-KEY     VALUE 'Y' FALSE 'N'.
+   03  PARSEXFD-FIELD-SECONDARY-FLAG    PIC X.
+       88  PARSEXFD-FIELD-IS-SECONDARY  VALUE 'Y' FALSE 'N'.
+   03  PARSEXFD-FIELD-HIDDEN-FLAG       PIC X.
+       88  PARSEXFD-FIELD-IS-HIDDEN     VALUE 'Y' FALSE 'N'.
+   03  PARSEXFD-FIELD-READ-ONLY-FLAG    PIC X.
+       88  PARSEXFD-FIELD-IS-READ-ONLY  VALUE 'Y' FALSE 'N'.
+
+01  PARSEXFD-TEXT-ERROR-MESSAGES.
+    03  PIC X(80).       | no error 1.
+    03  PIC X(80) VALUE
+            "Error opening XFD file".
+    03  PIC X(80) VALUE
+            "Error reading XFD file".
+    03  PIC X(80) VALUE
+            "XFD file Version error".
+    03  PIC X(80) VALUE
+            "XFD file doesn't match indexed file".
+    03  PIC X(80) VALUE
+            "Memory request size error".
+    03  PIC X(80) VALUE
+            "No memory".
+    03  PIC X(80) VALUE
+            "Too many key fields".
+    03  PIC X(80) VALUE
+            "No XFD file has been parsed".
+    03  PIC X(80) VALUE
+            "An XFD file has already been parsed".
+    03  PIC X(80) VALUE
+            "Invalid key index value".
+    03  PIC X(80) VALUE
+            "Invalid condition index value".
+    03  PIC X(80) VALUE
+            "Invalid field index value".
+    03  PIC X(80) VALUE
+            "This XFD is not for an Indexed File".
+01  PARSEXFD-TEXT-ERROR-MESSAGES-ARRAY
+    REDEFINES PARSEXFD-TEXT-ERROR-MESSAGES.
+    03  PARSEXFD-TEXT-ERROR-MESSAGE
+        PIC X(80)
+        OCCURS 14 TIMES.
+
+* end of parsexfd.def

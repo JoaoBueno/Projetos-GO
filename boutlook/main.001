@@ -1,0 +1,65 @@
+package main
+
+import (
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/layout"
+	"fyne.io/fyne/v2/widget"
+)
+
+func main() {
+	// Criação do aplicativo
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Outlook-Inspired Interface")
+
+	// Cabeçalho
+	header := container.NewVBox(
+		widget.NewLabelWithStyle("BLACKBOX from BLACKBOX", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+	)
+
+	// Menu lateral com estilo
+	sideMenu := container.NewVBox(
+		widget.NewLabelWithStyle("Folders", fyne.TextAlignLeading, fyne.TextStyle{Bold: true}),
+		widget.NewButton("Inbox", func() {}),
+		widget.NewButton("Sent", func() {}),
+		widget.NewButton("Drafts", func() {}),
+		widget.NewButton("Spam", func() {}),
+		widget.NewButton("Trash", func() {}),
+		widget.NewButton("Archives", func() {}),
+		widget.NewButton("Social", func() {}),
+		widget.NewButton("Updates", func() {}),
+		widget.NewButton("Forums", func() {}),
+		widget.NewButton("Promotions", func() {}),
+	)
+
+	// Conteúdo principal
+	content := container.NewVBox(
+		widget.NewLabel("Hi João,"),
+		widget.NewLabel("We noticed you’ve been away for a bit, and we can’t help but feel you’re missing out on some seriously exciting stuff happening at Blackbox AI!"),
+		widget.NewLabelWithStyle("Here’s what you’ve missed:", fyne.TextAlignLeading, fyne.TextStyle{Italic: true}),
+		widget.NewRichTextFromMarkdown(`
+🔥 **CyberCoder’s Game-Changer**: Our AI Agent can now autonomously fix its own code! Say goodbye to bugs and hello to a seamless coding experience! [Watch it here](#).
+⚡ **Speedy Updates**: We’ve rolled out new features faster than ever. [See it here](#).
+🎙️ **Your Voice Matters**: We’re listening! Your feedback is shaping CyberCoder’s evolution, and we want you back to help steer the ship! [Send it here](#).
+`),
+		layout.NewSpacer(),
+		widget.NewButton("GET ACCESS 100$ OF FREE CREDITS", func() {
+			// Ação do botão
+		}),
+	)
+
+	// Layout principal
+	mainContent := container.NewBorder(
+		header, // Topo
+		nil,    // Rodapé
+		sideMenu,
+		nil,
+		container.NewScroll(content),
+	)
+
+	// Configurações da janela
+	myWindow.SetContent(mainContent)
+	myWindow.Resize(fyne.NewSize(1000, 700))
+	myWindow.ShowAndRun()
+}

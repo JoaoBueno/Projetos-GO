@@ -1,0 +1,19 @@
+endereco.uf
+endereco.cep
+endereco.bairro
+endereco.numero
+endereco.municipio.descricao
+endereco.tipoLogradouro + endereco.logradouro
+
+telefones.ddd(1)
+telefones.numero(1)
+telefones.ddd(2)
+telefones.numero(2)
+telefones.ddd(3)
+telefones.numero(3)
+
+dataAbertura
+
+nomeFantasia
+
+cnaePrincipal

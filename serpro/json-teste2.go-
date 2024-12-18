@@ -1,0 +1,62 @@
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+	"log"
+
+	"github.com/tidwall/gjson"
+)
+
+func main() {
+	// res := `{"birds":{"pigeon":"likes to perch on rocks","eagle":"bird of prey"},"animals":"none"}`
+	// res := `{"access_token":"166108e4-5cbf-363b-9504-7f7afd17836b","scope":"am_application_scope default","token_type":"Bearer","expires_in":773}`
+
+	file, err := ioutil.ReadFile("./1l.json")
+	if err != nil {
+		log.Fatal(err)
+	}
+	// res := string(file)
+	// fmt.Println(res)
+
+	myJson := string(file)
+	// m, ok := gjson.Parse(myJson).Value().(map[string]interface{})
+	// if !ok {
+	// 	fmt.Println("Error")
+	// }
+
+	fmt.Println(gjson.Get(myJson, "ni"))
+	fmt.Println(gjson.Get(myJson, "cnaeSecundarias.0.codigo"))
+	fmt.Println(gjson.Get(myJson, "cnaeSecundarias.0.descricao"))
+	fmt.Println(gjson.Get(myJson, "cnaeSecundarias.#"))
+
+	// jsonBytes, err := json.Marshal(m)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// fmt.Println(string(jsonBytes))
+
+	// codigo velho VVVVVVVVVVVV
+	// var result map[string]interface{}
+	// json.Unmarshal([]byte(res), &result)
+
+	// // fmt.Println(result["access_token"])
+	// fmt.Println(result["ni"])
+	// fmt.Println(result["cnaePrincipal"])
+	// // cs := result["cnaeSecundarias"]
+	// // fmt.Println(cs)
+
+	// // value := reflect.ValueOf(cs)
+	// // c := value.Index(0).Interface().(map[string]interface{})
+	// // fmt.Println("c", c)
+	// // c = value.Index(1).Interface().(map[string]interface{})
+	// // fmt.Println("c", c["codigo"])
+
+	// for key, value := range result {
+	// 	// Each value is an interface{} type, that is type asserted as a string
+	// 	// fmt.Println(key, value.(string))
+	// 	// fmt.Print(key, ": ", value, " ==> ", reflect.TypeOf(value), "\n")
+	// 	fmt.Print(key, "\t\t\t==> ", reflect.TypeOf(value), "\n")
+	// }
+
+}

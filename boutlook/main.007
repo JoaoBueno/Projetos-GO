@@ -1,0 +1,44 @@
+package main
+
+import (
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
+)
+
+// CustomLayout define um layout personalizado
+type CustomLayout struct{}
+
+func (c *CustomLayout) Layout(objects []fyne.CanvasObject, size fyne.Size) {
+	// Define posições manualmente (x, y)
+	objects[0].Move(fyne.NewPos(10, 10)) // Primeiro widget
+	objects[0].Resize(fyne.NewSize(100, 30))
+
+	objects[1].Move(fyne.NewPos(120, 10)) // Segundo widget
+	objects[1].Resize(fyne.NewSize(200, 30))
+
+	objects[2].Move(fyne.NewPos(10, 50)) // Terceiro widget
+	objects[2].Resize(fyne.NewSize(310, 30))
+}
+
+func (c *CustomLayout) MinSize(objects []fyne.CanvasObject) fyne.Size {
+	return fyne.NewSize(400, 200) // Tamanho mínimo da janela
+}
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Custom Layout Exemplo")
+
+	// Widgets
+	label1 := widget.NewLabel("Nome:")
+	field1 := widget.NewEntry()
+	field2 := widget.NewEntry()
+
+	// Container com Layout Customizado
+	content := container.New(&CustomLayout{}, label1, field1, field2)
+
+	myWindow.SetContent(content)
+	myWindow.Resize(fyne.NewSize(400, 200))
+	myWindow.ShowAndRun()
+}

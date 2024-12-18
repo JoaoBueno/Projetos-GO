@@ -1,0 +1,8 @@
+github.com/jszwec/csvutil v1.7.1 h1:btxPxFwms8lHMgl0OIgOQ4Tayfqo0xid0hGkq1kM510=
+github.com/jszwec/csvutil v1.7.1/go.mod h1:Rpu7Uu9giO9subDyMCIQfHVDuLrcaC36UA4YcJjGBkg=
+github.com/sfomuseum/go-csvdict v1.0.0 h1:ECLdgya7eXmJ8oJpk8JKmiUmQhahgXehHPWIC+bTUc0=
+github.com/sfomuseum/go-csvdict v1.0.0/go.mod h1:cXhcPaOj1q//WQpkcH1HEXeAdNd0N/P+EniPVNfnBxs=
+github.com/snabb/isoweek v1.0.1 h1:B4IsN2GU8lCNVkaUUgOzaVpPkKC2DdY9zcnxz5yc0qg=
+github.com/snabb/isoweek v1.0.1/go.mod h1:CAijAxH7NMgjqGc9baHMDE4sTHMt4B/f6X/XLiEE1iA=
+github.com/whosonfirst/go-whosonfirst-csv v0.1.0 h1:ootWwNZNxXRGrWVQt17NFtcyukpWrgWsgKxbELLF8Sg=
+github.com/whosonfirst/go-whosonfirst-csv v0.1.0/go.mod h1:jhAZLURSWJN7mEpdQeXeSQnmLJq+FkTL2Q32iV0170I=

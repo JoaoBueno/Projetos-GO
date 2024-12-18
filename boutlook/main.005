@@ -1,0 +1,199 @@
+package main
+
+import (
+	"image/color"
+	"time"
+
+	"fyne.io/fyne/canvas"
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
+)
+
+type FileInfo struct {
+	Name         string
+	Kind         string
+	DateModified time.Time
+	Author       string
+}
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Photon")
+
+	// Dados de exemplo
+	files := []FileInfo{
+		{"bars.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"base.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"button-groups.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"buttons.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"docs.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"forms.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		// ... Adicione mais se quiser
+	}
+
+	// // Tabela de Arquivos
+	// table := widget.NewTable(
+	// 	func() (int, int) {
+	// 		// número de linhas = len(files) + 1 (para o header)
+	// 		// número de colunas = 4 (Name, Kind, Date Modified, Author)
+	// 		return len(files) + 1, 4
+	// 	},
+	// 	func() fyne.CanvasObject {
+	// 		return widget.NewLabel("") // célula básica
+	// 	},
+	// 	func(i widget.TableCellID, o fyne.CanvasObject) {
+	// 		label := o.(*widget.Label)
+	// 		if i.Row == 0 {
+	// 			// Cabeçalho
+	// 			switch i.Col {
+	// 			case 0:
+	// 				label.SetText("Name")
+	// 			case 1:
+	// 				label.SetText("Kind")
+	// 			case 2:
+	// 				label.SetText("Date Modified")
+	// 			case 3:
+	// 				label.SetText("Author")
+	// 			}
+	// 			label.TextStyle = fyne.TextStyle{Bold: true}
+	// 		} else {
+	// 			file := files[i.Row-1]
+	// 			switch i.Col {
+	// 			case 0:
+	// 				label.SetText(file.Name)
+	// 			case 1:
+	// 				label.SetText(file.Kind)
+	// 			case 2:
+	// 				label.SetText(file.DateModified.Format("Jan 02, 2006"))
+	// 			case 3:
+	// 				label.SetText(file.Author)
+	// 			}
+	// 		}
+	// 	},
+	// )
+	table := widget.NewTable(
+		func() (int, int) {
+			return len(files) + 1, 4
+		},
+		func() fyne.CanvasObject {
+			// Cria um Label e um retângulo de fundo
+			label := widget.NewLabel("")
+			rect := canvas.NewRectangle(color.White)
+			return container.NewMax(rect, label)
+		},
+		func(id widget.TableCellID, cell fyne.CanvasObject) {
+			// cell é o container.Max retornado anteriormente
+			objs := cell.(*fyne.Container).Objects
+			bg := objs[0].(*canvas.Rectangle)
+			label := objs[1].(*widget.Label)
+
+			if id.Row == 0 {
+				// Cabeçalho
+				switch id.Col {
+				case 0:
+					label.SetText("Name")
+				case 1:
+					label.SetText("Kind")
+				case 2:
+					label.SetText("Date Modified")
+				case 3:
+					label.SetText("Author")
+				}
+				label.TextStyle = fyne.TextStyle{Bold: true}
+				bg.FillColor = color.Gray{Y: 0.9} // Cinza claro para o cabeçalho
+			} else {
+				// Linhas de dados
+				file := files[id.Row-1]
+				switch id.Col {
+				case 0:
+					label.SetText(file.Name)
+				case 1:
+					label.SetText(file.Kind)
+				case 2:
+					label.SetText(file.DateModified.Format("Jan 02, 2006"))
+				case 3:
+					label.SetText(file.Author)
+				}
+
+				// Alternar cor de fundo
+				if id.Row%2 == 0 {
+					bg.FillColor = color.White // Linhas pares: branco
+				} else {
+					bg.FillColor = color.RGBA{0xF0, 0xF0, 0xF0, 0xFF} // Linhas ímpares: cinza claro
+				}
+			}
+
+			bg.Refresh()
+		},
+	)
+
+	// Ajuste manual das colunas
+	table.SetColumnWidth(0, 200) // "Name"
+	table.SetColumnWidth(1, 100) // "Kind"
+	table.SetColumnWidth(2, 150) // "Date Modified"
+	table.SetColumnWidth(3, 100) // "Author"
+
+	// Painel Lateral (Exemplo)
+	favoritesLabel := widget.NewLabel("Favorites")
+	sideListItems := []string{
+		"connors",
+		"Photon",
+		"Downloads",
+		"Documents",
+		"Applications",
+		"AirDrop",
+		"Desktop",
+	}
+
+	sideList := widget.NewList(
+		func() int {
+			return len(sideListItems)
+		},
+		func() fyne.CanvasObject {
+			return widget.NewLabel("")
+		},
+		func(i int, o fyne.CanvasObject) {
+			o.(*widget.Label).SetText(sideListItems[i])
+		},
+	)
+
+	tagsLabel := widget.NewLabel("Tags")
+	tagsItems := []string{"Red", "Orange", "Green", "Blue"}
+
+	tagsList := widget.NewList(
+		func() int {
+			return len(tagsItems)
+		},
+		func() fyne.CanvasObject {
+			return widget.NewLabel("")
+		},
+		func(i int, o fyne.CanvasObject) {
+			o.(*widget.Label).SetText(tagsItems[i])
+		},
+	)
+
+	sideBar := container.NewVBox(
+		favoritesLabel,
+		sideList,
+		widget.NewSeparator(),
+		tagsLabel,
+		tagsList,
+	)
+
+	// Toolbar Superior (Opcional)
+	toolbar := widget.NewToolbar(
+		widget.NewToolbarAction(nil, func() {}),
+		widget.NewToolbarAction(nil, func() {}),
+		// Adicione mais ações, defina ícones, etc.
+		widget.NewToolbarSpacer(),
+		widget.NewToolbarAction(nil, func() {}),
+	)
+
+	// Container Principal: Dividido em Barra Lateral e Tabela
+	content := container.NewBorder(toolbar, nil, sideBar, nil, table)
+	myWindow.SetContent(content)
+	myWindow.Resize(fyne.NewSize(800, 600))
+	myWindow.ShowAndRun()
+}

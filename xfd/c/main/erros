@@ -1,0 +1,21 @@
+-1001 - erro ao conectar com o banco
+-1002 - erro ao criar a tabela
+-1003 - erro na query do consultas_serpro
+-1004 - erro no scan(leitura do registro)
+-1005 - erro de prepare insert
+-1006 - erro de insert
+-1007 - erro de prepare update
+-1008 - erro de update
+-1009 - erro de prepare update data
+-1010 - erro de update data
+-1011 - erro na query do cnae
+
+
+-2001 - erro ao buscar o token
+-2002 - erro ao ler o token
+-2003 - erro ao realizar a requisição na API SERPRO
+-2004 - erro ao buscar dados da API SERPRO Status 
+-2005 - erro ao ler o body da requisicao
+
+-3001 - inconsistencia na leitura do banco de dados
+-3002 - erro na decodificação dos dados da empresa

@@ -1,0 +1,23 @@
+FD  AIMREEPP.
+01  EEP-REGIS.
+    03  EEP-CHAVE.
+        05  EEP-EMPRESA          PIC 9(002).
+        05  EEP-UF               PIC X(002).
+        05  EEP-PROMAT           PIC X(018).
+*(( xfd date=YYYYMMDD ))
+        05  EEP-DATAVIG          PIC 9(008).     | DATA DE INICIO DE VIGENCIA
+        05  REDEFINES EEP-DATAVIG.
+            07  EEP-ANOVIG       PIC 9(004).
+            07  EEP-MESVIG       PIC 9(002).
+            07  EEP-DIAVIG       PIC 9(002).
+    03  EEP-ALICM                PIC 9(002)V999999.
+    03  EEP-VAREJO               PIC 9(009)V999999.
+    03  EEP-TIPVAR               PIC X(001).     | TIPO DO VAREJO - P-PERCENTUAL
+                                                 |                  V-VALOR
+    03  EEP-UNIDA                PIC X(003).     | UNIDADE
+    03  EEP-MANAUT               PIC X(001).     | [M]anual ou [A]utomatico
+    03  EEP-TPMER                PIC 9(003).
+    03  EEP-ALICMNCT             PIC 9(002)V999999.
+    03  EEP-PERCFCP              PIC 9(003)V9999.  | PERCENTUAL DE FUNDO DE COMBATE A POBREZA
+    03  EEP-CONVENIO-ICMS        PIC X(001).    | "S"-POSSUI ANUENCIA ENTRE OS ESTADO, " " OU "N"-NAO POSSUI ANUENCIA
+    03  EEP-CARGATRIB-ICMS       PIC 9(003)V9999.

@@ -1,0 +1,138 @@
+{
+  "ni": "24907602000195",
+  "porte": "05",
+  "endereco": {
+    "uf": "DF",
+    "cep": "71200045",
+    "pais": {
+      "codigo": "105",
+      "descricao": "BRASIL"
+    },
+    "bairro": "SIA",
+    "numero": "S/N",
+    "municipio": {
+      "codigo": "9701",
+      "descricao": "BRASILIA"
+    },
+    "logradouro": "DE INDUSTRIA E ABASTECIMENTO QUADRA 04C LOTE 40/41",
+    "complemento": "",
+    "tipoLogradouro": "SETOR"
+  },
+  "telefones": [
+    {
+      "ddd": "61",
+      "numero": "34625014"
+    },
+    {
+      "ddd": "61",
+      "numero": "96741321"
+    }
+  ],
+  "dataAbertura": "1988-05-03",
+  "nomeFantasia": "PRIMEIRA LINHA",
+  "capitalSocial": 100000000,
+  "cnaePrincipal": {
+    "codigo": "4642702",
+    "descricao": "Comércio atacadista de roupas e acessórios para uso profissional e de segurança do trabalho"
+  },
+  "cnaeSecundarias": [
+    {
+      "codigo": "4789099",
+      "descricao": "Comércio varejista de outros produtos não especificados anteriormente"
+    },
+    {
+      "codigo": "4663000",
+      "descricao": "Comércio atacadista de Máquinas e equipamentos para uso industrial; partes e peças"
+    },
+    {
+      "codigo": "4669999",
+      "descricao": "Comércio atacadista de outras máquinas e equipamentos não especificados anteriormente; partes e peças"
+    },
+    {
+      "codigo": "4665600",
+      "descricao": "Comércio atacadista de máquinas e equipamentos para uso comercial; partes e peças"
+    },
+    {
+      "codigo": "4684299",
+      "descricao": "Comércio atacadista de outros produtos químicos e petroquímicos não especificados anteriormente"
+    },
+    {
+      "codigo": "4744003",
+      "descricao": "Comércio varejista de materiais hidráulicos"
+    },
+    {
+      "codigo": "4742300",
+      "descricao": "Comércio varejista de material elétrico"
+    },
+    {
+      "codigo": "4673700",
+      "descricao": "Comércio atacadista de material elétrico"
+    },
+    {
+      "codigo": "4789008",
+      "descricao": "Comércio varejista de artigos fotográficos e para filmagem"
+    },
+    {
+      "codigo": "4649408",
+      "descricao": "Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar"
+    },
+    {
+      "codigo": "4681805",
+      "descricao": "Comércio atacadista de lubrificantes"
+    },
+    {
+      "codigo": "4732600",
+      "descricao": "Comércio varejista de lubrificantes"
+    },
+    {
+      "codigo": "4651601",
+      "descricao": "Comércio atacadista de equipamentos de informática"
+    },
+    {
+      "codigo": "4651602",
+      "descricao": "Comércio atacadista de suprimentos para informática"
+    },
+    {
+      "codigo": "4751201",
+      "descricao": "Comércio varejista especializado de equipamentos e suprimentos de informática"
+    },
+    {
+      "codigo": "3314799",
+      "descricao": "Manutenção e reparação de outras máquinas e equipamentos para usos industriais não especificados anteriormente"
+    },
+    {
+      "codigo": "4322302",
+      "descricao": "Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração"
+    },
+    {
+      "codigo": "6209100",
+      "descricao": "Suporte técnico, manutenção e outros serviços em tecnologia da informação"
+    },
+    {
+      "codigo": "7119704",
+      "descricao": "Serviços de perícia técnica relacionados à segurança do trabalho"
+    },
+    {
+      "codigo": "6810201",
+      "descricao": "Compra e venda de imóveis próprios"
+    }
+  ],
+  "nomeEmpresarial": "PRIMEIRA LINHA COMERCIAL DE ROLAMENTOS LTDA",
+  "naturezaJuridica": {
+    "codigo": "2062",
+    "descricao": "Sociedade Empresária Limitada"
+  },
+  "situacaoEspecial": "",
+  "correioEletronico": "TONINHOFINANCEIRO@1LINHA.COM.BR",
+  "situacaoCadastral": {
+    "data": "2005-11-03",
+    "codigo": "2",
+    "motivo": ""
+  },
+  "municipioJurisdicao": {
+    "codigo": "0110100",
+    "descricao": "BRASÍLIA"
+  },
+  "tipoEstabelecimento": "1",
+  "dataSituacaoEspecial": ""
+}

@@ -1,0 +1,116 @@
+package main
+
+import (
+	"image/color"
+	"time"
+
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
+)
+
+type FileInfo struct {
+	Name         string
+	Kind         string
+	DateModified time.Time
+	Author       string
+}
+
+func main() {
+	myApp := app.New()
+
+	myWindow := myApp.NewWindow("Photon")
+
+	files := []FileInfo{
+		{"bars.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"base.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"button-groups.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"buttons.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"docs.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"forms.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"bars.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"base.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"button-groups.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"buttons.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"docs.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"forms.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"bars.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"base.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"button-groups.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"buttons.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"docs.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"forms.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"bars.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"base.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"button-groups.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"buttons.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"docs.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+		{"forms.scss", "Document", time.Date(2015, 10, 13, 0, 0, 0, 0, time.UTC), "connors"},
+	}
+
+	table := widget.NewTable(
+		func() (int, int) {
+			return len(files) + 1, 4
+		},
+		func() fyne.CanvasObject {
+			label := widget.NewLabel("")
+			rect := canvas.NewRectangle(color.White)
+			rect.SetMinSize(fyne.NewSize(40, 10)) // Ajuste a altura da linha aqui
+			return container.NewMax(rect, label)
+		},
+		func(id widget.TableCellID, cell fyne.CanvasObject) {
+			objs := cell.(*fyne.Container).Objects
+			bg := objs[0].(*canvas.Rectangle)
+			label := objs[1].(*widget.Label)
+
+			if id.Row == 0 {
+				// Cabeçalho
+				switch id.Col {
+				case 0:
+					label.SetText("Name")
+				case 1:
+					label.SetText("Kind")
+				case 2:
+					label.SetText("Date Modified")
+				case 3:
+					label.SetText("Author")
+				}
+				label.TextStyle = fyne.TextStyle{Bold: true}
+				bg.FillColor = color.Gray{Y: 230} // Cinza claro no cabeçalho
+			} else {
+				file := files[id.Row-1]
+				switch id.Col {
+				case 0:
+					label.SetText(file.Name)
+				case 1:
+					label.SetText(file.Kind)
+				case 2:
+					label.SetText(file.DateModified.Format("Jan 02, 2006"))
+				case 3:
+					label.SetText(file.Author)
+				}
+
+				// Alternar cor de linha
+				if id.Row%2 == 0 {
+					bg.FillColor = color.White
+				} else {
+					bg.FillColor = color.Gray{Y: 230} // Cinza para linhas ímpares
+				}
+			}
+
+			bg.Refresh()
+		},
+	)
+
+	// Ajustando larguras de coluna
+	table.SetColumnWidth(0, 200) // Name
+	table.SetColumnWidth(1, 100) // Kind
+	table.SetColumnWidth(2, 150) // Date Modified
+	table.SetColumnWidth(3, 100) // Author
+
+	myWindow.SetContent(table)
+	myWindow.Resize(fyne.NewSize(800, 600))
+	myWindow.ShowAndRun()
+}

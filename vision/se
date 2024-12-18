@@ -1,0 +1,1097 @@
+011   SEM SERIE                                              
+0110  SERIE 0                                                
+01100 SERIE 00                                               
+01102 SERIE 02                                               
+011053053                                                    
+0111  SERIE 1                                                
+01110 SERIE 10                                               
+011100SERIE 100                                              
+011101SERIE 101                                              
+01111 SERIE 11                                               
+011111SERIE 111                                              
+01112 SERIE 12                                               
+01113 SERIE 13                                               
+011137SERIE 137                                              
+01114 SERIE 14                                               
+01115 SERIE 15                                               
+01116 SERIE 16                                               
+01117 17                                                     
+01119 SERIE 19                                               
+0112  SERIE 2                                                
+01120 SERIE 20                                               
+011200SERIE 200                                              
+01121 SERIE 21                                               
+01122 SERIE 22                                               
+011220SERIE 220                                              
+01123 SERIE 23                                               
+01124 SERIE 24                                               
+01125 SERIE 25                                               
+01126 SERIE 26                                               
+01127 SERIE 27                                               
+01128 SERIE 28                                               
+0113  SERIE 3                                                
+01130 SERIE 30                                               
+011300SERIE 300                                              
+011301SERIE 301                                              
+011302302                                                    
+011303SERIE                                                  
+011314314                                                    
+011316316                                                    
+011323323                                                    
+011324324                                                    
+011325325                                                    
+011326326                                                    
+011327327                                                    
+011328328                                                    
+011329329                                                    
+01136 SERIE 36                                               
+01137 SERIE 37                                               
+0114  SERIE 4                                                
+01140 SERIE 40                                               
+01148 SERIE 48                                               
+0115  SERIE 5                                                
+011514514                                                    
+01152 52                                                     
+01155 SERIE 55                                               
+01158 SERIE 58                                               
+0116                                                         
+011603SERIE 603                                              
+01165 SERIE 65                                               
+011650SERIE 650                                              
+0117  SERIE 7                                                
+01173 SERIE 73                                               
+01174 SERIE 74                                               
+01176 SERIE 76                                               
+0118  SERIE 8                                                
+011820SERIE 820                                              
+011890SERIE 890                                              
+011891SERIE 891                                              
+0119  SERIE 9                                                
+011900SERIE 900                                              
+011901SERIE 901                                              
+011907SERIE 907                                              
+011910910                                                    
+01199 SERIE 99                                               
+011C  SERIE C                                                
+011D  SERIE D                                                
+011RC REGISTRO DE COMPROMISSO                                
+011RCSRECIBO DE SALARIOS                                     
+011REQREQUISICAO DE ENTRADAS                                 
+011TRFTRANSFERENCIA                                          
+011TROTROCAS                                                 
+011U  SERIE UNICA                                            
+012   SEM SERIE                                              
+0121  SERIE 1 - CAIXA                                        
+0121R1SERIE 1 - REFIN 1 (FINAN)                              
+0121R2SERIE 1 - REFIN 2 (FINAN)                              
+0122  SERIE 2 - TRANSFERENCIAS                               
+0122R1SERIE 2 - REFIN 1 (FINAN)                              
+0122R2SERIE 2 - REFIN 2 (FINAN)                              
+0123  SERIE 3 - ENTRADA                                      
+01231 31                                                     
+01232 32                                                     
+012327327                                                    
+01233 33                                                     
+0124  SERIE 4 - GARANTIA/CONSER                              
+0125  SERIE 5 - DEVOLUCAO COMPR                              
+0126  SERVICOS (SERVICE)                                     
+0127  REMESSA PARA DEMONSTRACAO                              
+0128  VENDAS SITE                                            
+012AGRAGRUPAMENTO                                            
+012ECFCUPOM FISCAL                                           
+012IMPIMPORTACAO                                             
+012INVINVENTARIO                                             
+012RCSRECIBO DE SALARIOS                                     
+012REQREQUISICAO DE SAIDAS                                   
+012TRFTRANSFERENCIA                                          
+012TROTROCAS                                                 
+012U  SERIE UNICA                                            
+021   SEM SERIE                                              
+0210  SERIE 0                                                
+02100 SERIE 00                                               
+02102 SERIE 02                                               
+021053053                                                    
+0211  SERIE 1                                                
+02110 SERIE 10                                               
+021100SERIE 100                                              
+021101SERIE 101                                              
+02111 SERIE 11                                               
+021111SERIE 111                                              
+02112 SERIE 12                                               
+02113 SERIE 13                                               
+021137SERIE 137                                              
+02114 SERIE 14                                               
+02115 SERIE 15                                               
+02116 SERIE 16                                               
+02117 17                                                     
+02119 SERIE 19                                               
+0212  SERIE 2                                                
+02120 SERIE 20                                               
+021200SERIE 200                                              
+02121 SERIE 21                                               
+02122 SERIE 22                                               
+021220SERIE 220                                              
+02123 SERIE 23                                               
+02124 SERIE 24                                               
+02125 SERIE 25                                               
+02126 SERIE 26                                               
+02127 SERIE 27                                               
+02128 SERIE 28                                               
+0213  SERIE 3                                                
+02130 SERIE 30                                               
+021300SERIE 300                                              
+021301SERIE 301                                              
+021302302                                                    
+021303SERIE                                                  
+021314314                                                    
+021316316                                                    
+021323323                                                    
+021324324                                                    
+021325325                                                    
+021326326                                                    
+021327327                                                    
+021328328                                                    
+021329329                                                    
+02136 SERIE 36                                               
+02137 SERIE 37                                               
+0214  SERIE 4                                                
+02140 SERIE 40                                               
+02148 SERIE 48                                               
+0215  SERIE 5                                                
+021514514                                                    
+02152 52                                                     
+02155 SERIE 55                                               
+02158 SERIE 58                                               
+0216                                                         
+021603SERIE 603                                              
+02165 SERIE 65                                               
+021650SERIE 650                                              
+0217  SERIE 7                                                
+02173 SERIE 73                                               
+02174 SERIE 74                                               
+02176 SERIE 76                                               
+0218  SERIE 8                                                
+021820SERIE 820                                              
+021890SERIE 890                                              
+021891SERIE 891                                              
+0219  SERIE 9                                                
+021900SERIE 900                                              
+021901SERIE 901                                              
+021907SERIE 907                                              
+021910910                                                    
+02199 SERIE 99                                               
+021C  SERIE C                                                
+021D  SERIE D                                                
+021RC REGISTRO DE COMPROMISSO                                
+021RCSRECIBO DE SALARIOS                                     
+021REQREQUISICAO DE ENTRADAS                                 
+021TRFTRANSFERENCIA                                          
+021TROTROCAS                                                 
+021U  SERIE UNICA                                            
+022   SEM SERIE                                              
+0221  SERIE 1 - CAIXA                                        
+0221R1SERIE 1 - REFIN 1 (FINAN)                              
+0221R2SERIE 1 - REFIN 2 (FINAN)                              
+0222  SERIE 2 - TRANSFERENCIAS                               
+0222R1SERIE 2 - REFIN 1 (FINAN)                              
+0222R2SERIE 2 - REFIN 2 (FINAN)                              
+0223  SERIE 3 - ENTRADA                                      
+02231 31                                                     
+02232 32                                                     
+022327327                                                    
+02233 33                                                     
+0224  SERIE 4 - GARANTIA/CONSER                              
+0225  SERIE 5 - DEVOLUCAO COMPR                              
+0226  SERVICOS (SERVICE)                                     
+0227  REMESSA PARA DEMONSTRACAO                              
+0228  VENDAS SITE                                            
+022AGRAGRUPAMENTO                                            
+022ECFCUPOM FISCAL                                           
+022INVINVENTARIO                                             
+022RCSRECIBO DE SALARIOS                                     
+022REQREQUISICAO DE SAIDAS                                   
+022TRFTRANSFERENCIA                                          
+022TROTROCAS                                                 
+022U  SERIE UNICA                                            
+031   SEM SERIE                                              
+0310  SERIE 0                                                
+03100 SERIE 00                                               
+03102 SERIE 02                                               
+031053053                                                    
+0311  SERIE 1                                                
+03110 SERIE 10                                               
+031100SERIE 100                                              
+031101SERIE 101                                              
+03111 SERIE 11                                               
+031111SERIE 111                                              
+03112 SERIE 12                                               
+03113 SERIE 13                                               
+031137SERIE 137                                              
+03114 SERIE 14                                               
+03115 SERIE 15                                               
+03116 SERIE 16                                               
+03117 17                                                     
+03119 SERIE 19                                               
+0312  SERIE 2                                                
+03120 SERIE 20                                               
+031200SERIE 200                                              
+03121 SERIE 21                                               
+03122 SERIE 22                                               
+031220SERIE 220                                              
+03123 SERIE 23                                               
+03124 SERIE 24                                               
+03125 SERIE 25                                               
+03126 SERIE 26                                               
+03127 SERIE 27                                               
+03128 SERIE 28                                               
+0313  SERIE 3                                                
+03130 SERIE 30                                               
+031300SERIE 300                                              
+031301SERIE 301                                              
+031302302                                                    
+031303SERIE                                                  
+031314314                                                    
+031316316                                                    
+031323323                                                    
+031324324                                                    
+031325325                                                    
+031326326                                                    
+031327327                                                    
+031328328                                                    
+031329329                                                    
+03136 SERIE 36                                               
+03137 SERIE 37                                               
+0314  SERIE 4                                                
+03140 SERIE 40                                               
+03148 SERIE 48                                               
+0315  SERIE 5                                                
+031514514                                                    
+03152 52                                                     
+03155 SERIE 55                                               
+03158 SERIE 58                                               
+0316                                                         
+031603SERIE 603                                              
+03165 SERIE 65                                               
+031650SERIE 650                                              
+0317  SERIE 7                                                
+03173 SERIE 73                                               
+03174 SERIE 74                                               
+03176 SERIE 76                                               
+0318  SERIE 8                                                
+031820SERIE 820                                              
+031890SERIE 890                                              
+031891SERIE 891                                              
+0319  SERIE 9                                                
+031900SERIE 900                                              
+031901SERIE 901                                              
+031907SERIE 907                                              
+031910910                                                    
+03199 SERIE 99                                               
+031C  SERIE C                                                
+031D  SERIE D                                                
+031RC REGISTRO DE COMPROMISSO                                
+031RCSRECIBO DE SALARIOS                                     
+031REQREQUISICAO DE ENTRADAS                                 
+031TRFTRANSFERENCIA                                          
+031TROTROCAS                                                 
+031U  SERIE UNICA                                            
+032   SEM SERIE                                              
+0321  SERIE 1 - CAIXA                                        
+0321R1SERIE 1 - REFIN 1 (FINAN)                              
+0321R2SERIE 1 - REFIN 2 (FINAN)                              
+0322  SERIE 2 - TRANSFERENCIAS                               
+0322R1SERIE 2 - REFIN 1 (FINAN)                              
+0322R2SERIE 2 - REFIN 2 (FINAN)                              
+0323  SERIE 3 - ENTRADA                                      
+03231 31                                                     
+03232 32                                                     
+032327327                                                    
+03233 33                                                     
+0324  SERIE 4 - GARANTIA/CONSER                              
+0325  SERIE 5 - DEVOLUCAO COMPR                              
+0326  SERVICOS (SERVICE)                                     
+0327  REMESSA PARA DEMONSTRACAO                              
+0328  VENDAS SITE                                            
+032AGRAGRUPAMENTO                                            
+032ECFCUPOM FISCAL                                           
+032INVINVENTARIO                                             
+032RCSRECIBO DE SALARIOS                                     
+032REQREQUISICAO DE SAIDAS                                   
+032TRFTRANSFERENCIA                                          
+032TROTROCAS                                                 
+032U  SERIE UNICA                                            
+041   SEM SERIE                                              
+0411  SERIE "1"                                              
+041RC REGISTRO DE COMPROMISSO                                
+041REQREQUISICAO DE ENTRADAS                                 
+041TRFTRANSFERENCIA                                          
+041U  SERIE UNICA                                            
+042   SEM SERIE                                              
+0421  SERIE 1                                                
+042ECFCUPOM FISCAL                                           
+042REQREQUISICAO DE SAIDAS                                   
+042TRFTRANSFERENCIA                                          
+042U  SERIE UNICA                                            
+051   SEM SERIE                                              
+0510  SERIE 0                                                
+05100 SERIE 00                                               
+05102 SERIE 02                                               
+051053053                                                    
+0511  SERIE 1                                                
+05110 SERIE 10                                               
+051100SERIE 100                                              
+051101SERIE 101                                              
+05111 SERIE 11                                               
+051111SERIE 111                                              
+05112 SERIE 12                                               
+05113 SERIE 13                                               
+051137SERIE 137                                              
+05114 SERIE 14                                               
+05115 SERIE 15                                               
+05116 SERIE 16                                               
+05117 17                                                     
+05119 SERIE 19                                               
+0512  SERIE 2                                                
+05120 SERIE 20                                               
+051200SERIE 200                                              
+05121 SERIE 21                                               
+05122 SERIE 22                                               
+051220SERIE 220                                              
+05123 SERIE 23                                               
+05124 SERIE 24                                               
+05125 SERIE 25                                               
+05126 SERIE 26                                               
+05127 SERIE 27                                               
+05128 SERIE 28                                               
+0513  SERIE 3                                                
+05130 SERIE 30                                               
+051300SERIE 300                                              
+051301SERIE 301                                              
+051302302                                                    
+051303SERIE                                                  
+051314314                                                    
+051316316                                                    
+051323323                                                    
+051324324                                                    
+051325325                                                    
+051326326                                                    
+051327327                                                    
+051328328                                                    
+051329329                                                    
+05136 SERIE 36                                               
+05137 SERIE 37                                               
+0514  SERIE 4                                                
+05140 SERIE 40                                               
+05148 SERIE 48                                               
+0515  SERIE 5                                                
+051514514                                                    
+05152 52                                                     
+05155 SERIE 55                                               
+05158 SERIE 58                                               
+0516                                                         
+051603SERIE 603                                              
+05165 SERIE 65                                               
+051650SERIE 650                                              
+0517  SERIE 7                                                
+05173 SERIE 73                                               
+05174 SERIE 74                                               
+05176 SERIE 76                                               
+0518  SERIE 8                                                
+051820SERIE 820                                              
+051890SERIE 890                                              
+051891SERIE 891                                              
+0519  SERIE 9                                                
+051900SERIE 900                                              
+051901SERIE 901                                              
+051907SERIE 907                                              
+051910910                                                    
+05199 SERIE 99                                               
+051C  SERIE C                                                
+051D  SERIE D                                                
+051RCSRECIBO DE SALARIOS                                     
+051REQREQUISICAO DE ENTRADAS                                 
+051TROTROCAS                                                 
+051U  SERIE UNICA                                            
+052   SEM SERIE                                              
+0521  SERIE 1 - CAIXA                                        
+0521R1SERIE 1 - REFIN 1 (FINAN)                              
+0521R2SERIE 1 - REFIN 2 (FINAN)                              
+0522  SERIE 2 - TRANSFERENCIAS                               
+0522R1SERIE 2 - REFIN 1 (FINAN)                              
+0522R2SERIE 2 - REFIN 2 (FINAN)                              
+0523  SERIE 3 - ENTRADA                                      
+05231 31                                                     
+05232 32                                                     
+052327327                                                    
+05233 33                                                     
+0524  SERIE 4 - GARANTIA/CONSER                              
+0525  SERIE 5 - DEVOLUCAO COMPR                              
+0526  SERVICOS (SERVICE)                                     
+0527  REMESSA PARA DEMONSTRACAO                              
+0528  VENDAS SITE                                            
+052AGRAGRUPAMENTO                                            
+052INVINVENTARIO                                             
+052RCSRECIBO DE SALARIOS                                     
+052REQREQUISICAO DE SAIDAS                                   
+052TROTROCAS                                                 
+052U  SERIE UNICA                                            
+061   SEM SERIE                                              
+0610  SERIE 0                                                
+06100 SERIE 00                                               
+0611  SERIE 1                                                
+06110 SERIE 10                                               
+06112 SERIE 12                                               
+06113 SERIE 13                                               
+06114 SERIE 14                                               
+0612  SERIE 2                                                
+0613  SERIE 3                                                
+0614  SERIE 4                                                
+0615  SERIE 5                                                
+0616  SERIE 6                                                
+0617  SERIE 7                                                
+0618  SERIE 8                                                
+0619  SERIE 9                                                
+061RC REGISTRO DE COMPROMISSO                                
+061REQREQUISICAO DE ENTRADAS                                 
+061TRFTRANSFERENCIA                                          
+061U  SERIE UNICA                                            
+062   SEM SERIE                                              
+0621  SERIE 1 - CAIXA                                        
+0621R1SERIE 1 - REFIN 1 (FINAN)                              
+0621R2SERIE 1 - REFIN 2 (FINAN)                              
+0622  SERIE 2 - TRANSFERENCIAS                               
+0622R1SERIE 2 - REFIN 1 (FINAN)                              
+0622R2SERIE 2 - REFIN 2 (FINAN)                              
+0623  SERIE 3 - ENTRADA                                      
+06231 31                                                     
+06232 32                                                     
+06233 33                                                     
+0624  SERIE 4 - GARANTIA/CONSER                              
+0625  SERIE 5 - DEVOLUCAO COMPR                              
+062AGRAGRUPAMENTO                                            
+062ECFCUPOM FISCAL                                           
+062IMPIMPORTACAO                                             
+062REQREQUISICAO DE SAIDAS                                   
+062TRFTRANSFERENCIA                                          
+062U  SERIE UNICA                                            
+0711  SERIE "1"                                              
+07112 SERIE 12                                               
+0712  SERIE "2"                                              
+07121 21                                                     
+0713  SERIE "3"                                              
+0714  SERIE 4                                                
+0715  SERIE 5                                                
+071RC REGISTRO DE COMPROMISSO                                
+071REQREQUISICAO DE ENTRADAS                                 
+071U  SERIE UNICA                                            
+072REQREQUISICAO DE SAIDAS                                   
+072U  SERIE UNICA                                            
+081   SEM SERIE                                              
+0811  SERIE "1"                                              
+081RC REGISTRO DE COMPROMISSO                                
+081REQREQUISICAO DE ENTRADAS                                 
+081TRFTRANSFERENCIA                                          
+081U  SERIE UNICA                                            
+082   SEM SERIE                                              
+0821  SERIE 1                                                
+082ECFCUPOM FISCAL                                           
+082REQREQUISICAO DE SAIDAS                                   
+082TRFTRANSFERENCIA                                          
+082U  SERIE UNICA                                            
+201   SEM SERIE                                              
+2011  SERIE "1"                                              
+201RC REGISTRO DE COMPROMISSO                                
+201REQREQUISICAO DE ENTRADAS                                 
+201TRFTRANSFERENCIA                                          
+201U  SERIE UNICA                                            
+202   SEM SERIE                                              
+2021  SERIE 1                                                
+202ECFCUPOM FISCAL                                           
+202REQREQUISICAO DE SAIDAS                                   
+202TRFTRANSFERENCIA                                          
+202U  SERIE UNICA                                            
+211   SEM SERIE                                              
+2111  SERIE "1"                                              
+211RC REGISTRO DE COMPROMISSO                                
+211REQREQUISICAO DE ENTRADAS                                 
+211TRFTRANSFERENCIA                                          
+211U  SERIE UNICA                                            
+212   SEM SERIE                                              
+2121  SERIE 1                                                
+212ECFCUPOM FISCAL                                           
+212REQREQUISICAO DE SAIDAS                                   
+212TRFTRANSFERENCIA                                          
+212U  SERIE UNICA                                            
+221   SEM SERIE                                              
+2211  SERIE "1"                                              
+221RC REGISTRO DE COMPROMISSO                                
+221REQREQUISICAO DE ENTRADAS                                 
+221TRFTRANSFERENCIA                                          
+221U  SERIE UNICA                                            
+222   SEM SERIE                                              
+2221  SERIE 1                                                
+222ECFCUPOM FISCAL                                           
+222REQREQUISICAO DE SAIDAS                                   
+222TRFTRANSFERENCIA                                          
+222U  SERIE UNICA                                            
+511   SEM SERIE                                              
+5110  SERIE 0                                                
+51100 SERIE 00                                               
+51102 SERIE 02                                               
+511053053                                                    
+5111  SERIE 1                                                
+51110 SERIE 10                                               
+511100SERIE 100                                              
+511101SERIE 101                                              
+51111 SERIE 11                                               
+511111SERIE 111                                              
+51112 SERIE 12                                               
+51113 SERIE 13                                               
+511137SERIE 137                                              
+51114 SERIE 14                                               
+51115 SERIE 15                                               
+51116 SERIE 16                                               
+51117 17                                                     
+51119 SERIE 19                                               
+5112  SERIE 2                                                
+51120 SERIE 20                                               
+511200SERIE 200                                              
+51121 SERIE 21                                               
+51122 SERIE 22                                               
+511220SERIE 220                                              
+51123 SERIE 23                                               
+51124 SERIE 24                                               
+51125 SERIE 25                                               
+51126 SERIE 26                                               
+51127 SERIE 27                                               
+51128 SERIE 28                                               
+5113  SERIE 3                                                
+51130 SERIE 30                                               
+511300SERIE 300                                              
+511301SERIE 301                                              
+511302302                                                    
+511303SERIE                                                  
+511314314                                                    
+511316316                                                    
+511323323                                                    
+511324324                                                    
+511325325                                                    
+511326326                                                    
+511327327                                                    
+511328328                                                    
+511329329                                                    
+51136 SERIE 36                                               
+51137 SERIE 37                                               
+5114  SERIE 4                                                
+51140 SERIE 40                                               
+51148 SERIE 48                                               
+5115  SERIE 5                                                
+511514514                                                    
+51152 52                                                     
+51155 SERIE 55                                               
+51158 SERIE 58                                               
+5116                                                         
+511603SERIE 603                                              
+51165 SERIE 65                                               
+511650SERIE 650                                              
+5117  SERIE 7                                                
+51173 SERIE 73                                               
+51174 SERIE 74                                               
+51176 SERIE 76                                               
+5118  SERIE 8                                                
+511820SERIE 820                                              
+511890SERIE 890                                              
+511891SERIE 891                                              
+5119  SERIE 9                                                
+511900SERIE 900                                              
+511901SERIE 901                                              
+511907SERIE 907                                              
+511910910                                                    
+51199 SERIE 99                                               
+511C  SERIE C                                                
+511D  SERIE D                                                
+511RC REGISTRO DE COMPROMISSO                                
+511RCSRECIBO DE SALARIOS                                     
+511REQREQUISICAO DE ENTRADAS                                 
+511TRFTRANSFERENCIA                                          
+511TROTROCAS                                                 
+511U  SERIE UNICA                                            
+512   SEM SERIE                                              
+5121  SERIE 1 - CAIXA                                        
+5121R1SERIE 1 - REFIN 1 (FINAN)                              
+5121R2SERIE 1 - REFIN 2 (FINAN)                              
+5122  SERIE 2 - TRANSFERENCIAS                               
+5122R1SERIE 2 - REFIN 1 (FINAN)                              
+5122R2SERIE 2 - REFIN 2 (FINAN)                              
+5123  SERIE 3 - ENTRADA                                      
+51231 31                                                     
+51232 32                                                     
+512327327                                                    
+51233 33                                                     
+5124  SERIE 4 - GARANTIA/CONSER                              
+5125  SERIE 5 - DEVOLUCAO COMPR                              
+5126  SERVICOS (SERVICE)                                     
+5127  REMESSA PARA DEMONSTRACAO                              
+5128  VENDAS SITE                                            
+512AGRAGRUPAMENTO                                            
+512ECFCUPOM FISCAL                                           
+512IMPIMPORTACAO                                             
+512INVINVENTARIO                                             
+512RCSRECIBO DE SALARIOS                                     
+512REQREQUISICAO DE SAIDAS                                   
+512TRFTRANSFERENCIA                                          
+512TROTROCAS                                                 
+512U  SERIE UNICA                                            
+521   SEM SERIE                                              
+5210  SERIE 0                                                
+52100 SERIE 00                                               
+52102 SERIE 02                                               
+521053053                                                    
+5211  SERIE 1                                                
+52110 SERIE 10                                               
+521100SERIE 100                                              
+521101SERIE 101                                              
+52111 SERIE 11                                               
+521111SERIE 111                                              
+52112 SERIE 12                                               
+52113 SERIE 13                                               
+521137SERIE 137                                              
+52114 SERIE 14                                               
+52115 SERIE 15                                               
+52116 SERIE 16                                               
+52117 17                                                     
+52119 SERIE 19                                               
+5212  SERIE 2                                                
+52120 SERIE 20                                               
+521200SERIE 200                                              
+52121 SERIE 21                                               
+52122 SERIE 22                                               
+521220SERIE 220                                              
+52123 SERIE 23                                               
+52124 SERIE 24                                               
+52125 SERIE 25                                               
+52126 SERIE 26                                               
+52127 SERIE 27                                               
+52128 SERIE 28                                               
+5213  SERIE 3                                                
+52130 SERIE 30                                               
+521300SERIE 300                                              
+521301SERIE 301                                              
+521302302                                                    
+521303SERIE                                                  
+521314314                                                    
+521316316                                                    
+521323323                                                    
+521324324                                                    
+521325325                                                    
+521326326                                                    
+521327327                                                    
+521328328                                                    
+521329329                                                    
+52136 SERIE 36                                               
+52137 SERIE 37                                               
+5214  SERIE 4                                                
+52140 SERIE 40                                               
+52148 SERIE 48                                               
+5215  SERIE 5                                                
+521514514                                                    
+52152 52                                                     
+52155 SERIE 55                                               
+52158 SERIE 58                                               
+5216                                                         
+521603SERIE 603                                              
+52165 SERIE 65                                               
+521650SERIE 650                                              
+5217  SERIE 7                                                
+52173 SERIE 73                                               
+52174 SERIE 74                                               
+52176 SERIE 76                                               
+5218  SERIE 8                                                
+521820SERIE 820                                              
+521890SERIE 890                                              
+521891SERIE 891                                              
+5219  SERIE 9                                                
+521900SERIE 900                                              
+521901SERIE 901                                              
+521907SERIE 907                                              
+521910910                                                    
+52199 SERIE 99                                               
+521C  SERIE C                                                
+521D  SERIE D                                                
+521RC REGISTRO DE COMPROMISSO                                
+521RCSRECIBO DE SALARIOS                                     
+521REQREQUISICAO DE ENTRADAS                                 
+521TRFTRANSFERENCIA                                          
+521TROTROCAS                                                 
+521U  SERIE UNICA                                            
+522   SEM SERIE                                              
+5221  SERIE 1 - CAIXA                                        
+5221R1SERIE 1 - REFIN 1 (FINAN)                              
+5221R2SERIE 1 - REFIN 2 (FINAN)                              
+5222  SERIE 2 - TRANSFERENCIAS                               
+5222R1SERIE 2 - REFIN 1 (FINAN)                              
+5222R2SERIE 2 - REFIN 2 (FINAN)                              
+5223  SERIE 3 - ENTRADA                                      
+52231 31                                                     
+52232 32                                                     
+522327327                                                    
+52233 33                                                     
+5224  SERIE 4 - GARANTIA/CONSER                              
+5225  SERIE 5 - DEVOLUCAO COMPR                              
+5226  SERVICOS (SERVICE)                                     
+5227  REMESSA PARA DEMONSTRACAO                              
+5228  VENDAS SITE                                            
+522AGRAGRUPAMENTO                                            
+522ECFCUPOM FISCAL                                           
+522INVINVENTARIO                                             
+522RCSRECIBO DE SALARIOS                                     
+522REQREQUISICAO DE SAIDAS                                   
+522TRFTRANSFERENCIA                                          
+522TROTROCAS                                                 
+522U  SERIE UNICA                                            
+531   SEM SERIE                                              
+5310  SERIE 0                                                
+53100 SERIE 00                                               
+53102 SERIE 02                                               
+531053053                                                    
+5311  SERIE 1                                                
+53110 SERIE 10                                               
+531100SERIE 100                                              
+531101SERIE 101                                              
+53111 SERIE 11                                               
+531111SERIE 111                                              
+53112 SERIE 12                                               
+53113 SERIE 13                                               
+531137SERIE 137                                              
+53114 SERIE 14                                               
+53115 SERIE 15                                               
+53116 SERIE 16                                               
+53117 17                                                     
+53119 SERIE 19                                               
+5312  SERIE 2                                                
+53120 SERIE 20                                               
+531200SERIE 200                                              
+53121 SERIE 21                                               
+53122 SERIE 22                                               
+531220SERIE 220                                              
+53123 SERIE 23                                               
+53124 SERIE 24                                               
+53125 SERIE 25                                               
+53126 SERIE 26                                               
+53127 SERIE 27                                               
+53128 SERIE 28                                               
+5313  SERIE 3                                                
+53130 SERIE 30                                               
+531300SERIE 300                                              
+531301SERIE 301                                              
+531302302                                                    
+531303SERIE                                                  
+531314314                                                    
+531316316                                                    
+531323323                                                    
+531324324                                                    
+531325325                                                    
+531326326                                                    
+531327327                                                    
+531328328                                                    
+531329329                                                    
+53136 SERIE 36                                               
+53137 SERIE 37                                               
+5314  SERIE 4                                                
+53140 SERIE 40                                               
+53148 SERIE 48                                               
+5315  SERIE 5                                                
+531514514                                                    
+53152 52                                                     
+53155 SERIE 55                                               
+53158 SERIE 58                                               
+5316                                                         
+531603SERIE 603                                              
+53165 SERIE 65                                               
+531650SERIE 650                                              
+5317  SERIE 7                                                
+53173 SERIE 73                                               
+53174 SERIE 74                                               
+53176 SERIE 76                                               
+5318  SERIE 8                                                
+531820SERIE 820                                              
+531890SERIE 890                                              
+531891SERIE 891                                              
+5319  SERIE 9                                                
+531900SERIE 900                                              
+531901SERIE 901                                              
+531907SERIE 907                                              
+531910910                                                    
+53199 SERIE 99                                               
+531C  SERIE C                                                
+531D  SERIE D                                                
+531RC REGISTRO DE COMPROMISSO                                
+531RCSRECIBO DE SALARIOS                                     
+531REQREQUISICAO DE ENTRADAS                                 
+531TRFTRANSFERENCIA                                          
+531TROTROCAS                                                 
+531U  SERIE UNICA                                            
+532   SEM SERIE                                              
+5321  SERIE 1 - CAIXA                                        
+5321R1SERIE 1 - REFIN 1 (FINAN)                              
+5321R2SERIE 1 - REFIN 2 (FINAN)                              
+5322  SERIE 2 - TRANSFERENCIAS                               
+5322R1SERIE 2 - REFIN 1 (FINAN)                              
+5322R2SERIE 2 - REFIN 2 (FINAN)                              
+5323  SERIE 3 - ENTRADA                                      
+53231 31                                                     
+53232 32                                                     
+532327327                                                    
+53233 33                                                     
+5324  SERIE 4 - GARANTIA/CONSER                              
+5325  SERIE 5 - DEVOLUCAO COMPR                              
+5326  SERVICOS (SERVICE)                                     
+5327  REMESSA PARA DEMONSTRACAO                              
+5328  VENDAS SITE                                            
+532AGRAGRUPAMENTO                                            
+532ECFCUPOM FISCAL                                           
+532INVINVENTARIO                                             
+532RCSRECIBO DE SALARIOS                                     
+532REQREQUISICAO DE SAIDAS                                   
+532TRFTRANSFERENCIA                                          
+532TROTROCAS                                                 
+532U  SERIE UNICA                                            
+541   SEM SERIE                                              
+5411  SERIE "1"                                              
+541RC REGISTRO DE COMPROMISSO                                
+541REQREQUISICAO DE ENTRADAS                                 
+541TRFTRANSFERENCIA                                          
+541U  SERIE UNICA                                            
+542   SEM SERIE                                              
+5421  SERIE 1                                                
+542ECFCUPOM FISCAL                                           
+542REQREQUISICAO DE SAIDAS                                   
+542TRFTRANSFERENCIA                                          
+542U  SERIE UNICA                                            
+551   SEM SERIE                                              
+5510  SERIE 0                                                
+55100 SERIE 00                                               
+55102 SERIE 02                                               
+551053053                                                    
+5511  SERIE 1                                                
+55110 SERIE 10                                               
+551100SERIE 100                                              
+551101SERIE 101                                              
+55111 SERIE 11                                               
+551111SERIE 111                                              
+55112 SERIE 12                                               
+55113 SERIE 13                                               
+551137SERIE 137                                              
+55114 SERIE 14                                               
+55115 SERIE 15                                               
+55116 SERIE 16                                               
+55117 17                                                     
+55119 SERIE 19                                               
+5512  SERIE 2                                                
+55120 SERIE 20                                               
+551200SERIE 200                                              
+55121 SERIE 21                                               
+55122 SERIE 22                                               
+551220SERIE 220                                              
+55123 SERIE 23                                               
+55124 SERIE 24                                               
+55125 SERIE 25                                               
+55126 SERIE 26                                               
+55127 SERIE 27                                               
+55128 SERIE 28                                               
+5513  SERIE 3                                                
+55130 SERIE 30                                               
+551300SERIE 300                                              
+551301SERIE 301                                              
+551302302                                                    
+551303SERIE                                                  
+551314314                                                    
+551316316                                                    
+551323323                                                    
+551324324                                                    
+551325325                                                    
+551326326                                                    
+551327327                                                    
+551328328                                                    
+551329329                                                    
+55136 SERIE 36                                               
+55137 SERIE 37                                               
+5514  SERIE 4                                                
+55140 SERIE 40                                               
+55148 SERIE 48                                               
+5515  SERIE 5                                                
+551514514                                                    
+55152 52                                                     
+55155 SERIE 55                                               
+55158 SERIE 58                                               
+5516                                                         
+551603SERIE 603                                              
+55165 SERIE 65                                               
+551650SERIE 650                                              
+5517  SERIE 7                                                
+55173 SERIE 73                                               
+55174 SERIE 74                                               
+55176 SERIE 76                                               
+5518  SERIE 8                                                
+551820SERIE 820                                              
+551890SERIE 890                                              
+551891SERIE 891                                              
+5519  SERIE 9                                                
+551900SERIE 900                                              
+551901SERIE 901                                              
+551907SERIE 907                                              
+551910910                                                    
+55199 SERIE 99                                               
+551C  SERIE C                                                
+551D  SERIE D                                                
+551RCSRECIBO DE SALARIOS                                     
+551REQREQUISICAO DE ENTRADAS                                 
+551TROTROCAS                                                 
+551U  SERIE UNICA                                            
+552   SEM SERIE                                              
+5521  SERIE 1 - CAIXA                                        
+5521R1SERIE 1 - REFIN 1 (FINAN)                              
+5521R2SERIE 1 - REFIN 2 (FINAN)                              
+5522  SERIE 2 - TRANSFERENCIAS                               
+5522R1SERIE 2 - REFIN 1 (FINAN)                              
+5522R2SERIE 2 - REFIN 2 (FINAN)                              
+5523  SERIE 3 - ENTRADA                                      
+55231 31                                                     
+55232 32                                                     
+552327327                                                    
+55233 33                                                     
+5524  SERIE 4 - GARANTIA/CONSER                              
+5525  SERIE 5 - DEVOLUCAO COMPR                              
+5526  SERVICOS (SERVICE)                                     
+5527  REMESSA PARA DEMONSTRACAO                              
+5528  VENDAS SITE                                            
+552AGRAGRUPAMENTO                                            
+552INVINVENTARIO                                             
+552RCSRECIBO DE SALARIOS                                     
+552REQREQUISICAO DE SAIDAS                                   
+552TROTROCAS                                                 
+552U  SERIE UNICA                                            
+561   SEM SERIE                                              
+5610  SERIE 0                                                
+56100 SERIE 00                                               
+5611  SERIE 1                                                
+56110 SERIE 10                                               
+56112 SERIE 12                                               
+56113 SERIE 13                                               
+56114 SERIE 14                                               
+5612  SERIE 2                                                
+5613  SERIE 3                                                
+5614  SERIE 4                                                
+5615  SERIE 5                                                
+5616  SERIE 6                                                
+5617  SERIE 7                                                
+5618  SERIE 8                                                
+5619  SERIE 9                                                
+561RC REGISTRO DE COMPROMISSO                                
+561REQREQUISICAO DE ENTRADAS                                 
+561TRFTRANSFERENCIA                                          
+561U  SERIE UNICA                                            
+562   SEM SERIE                                              
+5621  SERIE 1 - CAIXA                                        
+5621R1SERIE 1 - REFIN 1 (FINAN)                              
+5621R2SERIE 1 - REFIN 2 (FINAN)                              
+5622  SERIE 2 - TRANSFERENCIAS                               
+5622R1SERIE 2 - REFIN 1 (FINAN)                              
+5622R2SERIE 2 - REFIN 2 (FINAN)                              
+5623  SERIE 3 - ENTRADA                                      
+56231 31                                                     
+56232 32                                                     
+56233 33                                                     
+5624  SERIE 4 - GARANTIA/CONSER                              
+5625  SERIE 5 - DEVOLUCAO COMPR                              
+562AGRAGRUPAMENTO                                            
+562ECFCUPOM FISCAL                                           
+562IMPIMPORTACAO                                             
+562INVINVENTARIO                                             
+562REQREQUISICAO DE SAIDAS                                   
+562TRFTRANSFERENCIA                                          
+562U  SERIE UNICA                                            
+571   SEM SERIE                                              
+5711  SERIE "1"                                              
+571RC REGISTRO DE COMPROMISSO                                
+571REQREQUISICAO DE ENTRADAS                                 
+571TRFTRANSFERENCIA                                          
+571U  SERIE UNICA                                            
+572   SEM SERIE                                              
+5721  SERIE 1                                                
+572ECFCUPOM FISCAL                                           
+572REQREQUISICAO DE SAIDAS                                   
+572TRFTRANSFERENCIA                                          
+572U  SERIE UNICA                                            
+581   SEM SERIE                                              
+5811  SERIE "1"                                              
+581RC REGISTRO DE COMPROMISSO                                
+581REQREQUISICAO DE ENTRADAS                                 
+581TRFTRANSFERENCIA                                          
+581U  SERIE UNICA                                            
+582   SEM SERIE                                              
+5821  SERIE 1                                                
+582ECFCUPOM FISCAL                                           
+582REQREQUISICAO DE SAIDAS                                   
+582TRFTRANSFERENCIA                                          
+582U  SERIE UNICA                                            
+701   SEM SERIE                                              
+7011  SERIE "1"                                              
+701RC REGISTRO DE COMPROMISSO                                
+701REQREQUISICAO DE ENTRADAS                                 
+701TRFTRANSFERENCIA                                          
+701U  SERIE UNICA                                            
+702   SEM SERIE                                              
+7021  SERIE 1                                                
+702ECFCUPOM FISCAL                                           
+702REQREQUISICAO DE SAIDAS                                   
+702TRFTRANSFERENCIA                                          
+702U  SERIE UNICA                                            
+711   SEM SERIE                                              
+7111  SERIE "1"                                              
+711RC REGISTRO DE COMPROMISSO                                
+711REQREQUISICAO DE ENTRADAS                                 
+711TRFTRANSFERENCIA                                          
+711U  SERIE UNICA                                            
+712   SEM SERIE                                              
+7121  SERIE 1                                                
+712ECFCUPOM FISCAL                                           
+712REQREQUISICAO DE SAIDAS                                   
+712TRFTRANSFERENCIA                                          
+712U  SERIE UNICA                                            
+721   SEM SERIE                                              
+7211  SERIE "1"                                              
+721RC REGISTRO DE COMPROMISSO                                
+721REQREQUISICAO DE ENTRADAS                                 
+721TRFTRANSFERENCIA                                          
+721U  SERIE UNICA                                            
+722   SEM SERIE                                              
+7221  SERIE 1                                                
+722ECFCUPOM FISCAL                                           
+722REQREQUISICAO DE SAIDAS                                   
+722TRFTRANSFERENCIA                                          
+722U  SERIE UNICA                                            
+901   SEM SERIE                                              
+9011  SERIE "1"                                              
+901RC REGISTRO DE COMPROMISSO                                
+901REQREQUISICAO DE ENTRADAS                                 
+901TRFTRANSFERENCIA                                          
+901U  SERIE UNICA                                            
+902   SEM SERIE                                              
+9021  SERIE 1                                                
+902ECFCUPOM FISCAL                                           
+902REQREQUISICAO DE SAIDAS                                   
+902TRFTRANSFERENCIA                                          
+902U  SERIE UNICA                                            
+911   SEM SERIE                                              
+9111  SERIE "1"                                              
+911RC REGISTRO DE COMPROMISSO                                
+911REQREQUISICAO DE ENTRADAS                                 
+911TRFTRANSFERENCIA                                          
+911U  SERIE UNICA                                            
+912   SEM SERIE                                              
+9121  SERIE 1                                                
+912ECFCUPOM FISCAL                                           
+912REQREQUISICAO DE SAIDAS                                   
+912TRFTRANSFERENCIA                                          
+912U  SERIE UNICA                                            

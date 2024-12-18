@@ -1,0 +1,29 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+)
+
+type money struct {
+	Base     string  `json:"base"`
+	Currency string  `json:"currency"`
+	Amount   float32 `json:"amount"`
+}
+
+type info struct {
+	Data money
+}
+
+func main() {
+	str := `{"data":{"base":"BTC","currency":"USD","amount":4225.87}}`
+
+	var i info
+
+	if err := json.Unmarshal([]byte(str), &i); err != nil {
+		fmt.Println("ugh: ", err)
+	}
+
+	fmt.Println("info: ", i)
+	fmt.Println("currency: ", i.Data.Currency)
+}

@@ -1,0 +1,17 @@
+package main
+
+import (
+	"os"
+
+	"github.com/therecipe/qt/widgets"
+)
+
+func main() {
+	app := widgets.NewQApplication(len(os.Args), os.Args)
+
+	window := widgets.NewQMainWindow(nil, 0)
+	window.SetWindowTitle("Hello World Example")
+	window.Show()
+
+	app.Exec()
+}

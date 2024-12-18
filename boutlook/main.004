@@ -1,0 +1,62 @@
+package main
+
+import (
+	"image/color"
+
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/theme"
+	"fyne.io/fyne/v2/widget"
+)
+
+type myTheme struct{}
+
+func (m myTheme) Font(style fyne.TextStyle) fyne.Resource {
+	return theme.DefaultTheme().Font(style)
+}
+
+func (m myTheme) Size(name fyne.ThemeSizeName) float32 {
+	// Aumentar o tamanho das fontes
+	if name == theme.SizeNameText {
+		return 18 // Tamanho da fonte para textos (aumente conforme necessário)
+	}
+	return theme.DefaultTheme().Size(name)
+}
+
+func (m myTheme) Color(name fyne.ThemeColorName, variant fyne.ThemeVariant) color.Color {
+	return theme.DefaultTheme().Color(name, variant)
+}
+
+func (m myTheme) Icon(name fyne.ThemeIconName) fyne.Resource {
+	return theme.DefaultTheme().Icon(name)
+}
+
+func main() {
+	myApp := app.New()
+	myApp.Settings().SetTheme(&myTheme{}) // Configurar o tema personalizado
+
+	myWindow := myApp.NewWindow("DBGrid Example")
+	myWindow.SetContent(container.NewVBox(
+		widget.NewLabel("Texto com fonte maior!"),
+		widget.NewButton("Clique Aqui", func() {
+			println("Botão clicado!")
+		}),
+	))
+
+	data := [][]string{
+		{"1", "John Doe", "johndoe@example.com"},
+		{"2", "Jane Smith", "janesmith@example.com"},
+	}
+	table := widget.NewTable(
+		func() (int, int) { return len(data), len(data[0]) },
+		func() fyne.CanvasObject { return widget.NewLabel("") },
+		func(id widget.TableCellID, cell fyne.CanvasObject) {
+			cell.(*widget.Label).SetText(data[id.Row][id.Col])
+		},
+	)
+
+	myWindow.SetContent(table)
+	myWindow.Resize(fyne.NewSize(800, 600))
+	myWindow.ShowAndRun()
+}
